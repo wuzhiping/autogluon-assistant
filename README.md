@@ -64,6 +64,7 @@ MLZero supports multiple LLM providers with AWS Bedrock as the default:
 
 ```bash
 export OPENAI_API_KEY="<your-secret-key>"
+export OPENAI_BASE_URL='http://litellm.feg.cn/v1'
 ```
 
 To run MLZero in CLI:
