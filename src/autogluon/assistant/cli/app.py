@@ -41,7 +41,7 @@ def main(
         help=f"YAML config file (default: {DEFAULT_CONFIG_PATH})",
     ),
     llm_provider: str = typer.Option(
-        "bedrock",
+        "openai",
         "--provider",
         help="LLM provider to use (bedrock, openai, anthropic, sagemaker). Overrides config file.",
     ),
