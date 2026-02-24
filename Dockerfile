@@ -48,12 +48,13 @@ ENV PATH="/opt/conda/envs/mlzero/bin:$PATH"
 
 # Clone autogluon-assistant from GitHub
 ARG BRANCH=main
-RUN git clone --branch ${BRANCH} https://github.com/autogluon/autogluon-assistant.git /opt/autogluon-assistant
+RUN git clone --branch ${BRANCH} https://github.com/shawoo/autogluon-assistant.git /opt/autogluon-assistant
 
 # Install autogluon-assistant in mlzero environment
 RUN bash -c "source /opt/conda/etc/profile.d/conda.sh && \
     conda activate mlzero && \
     cd /opt/autogluon-assistant && \
+    pip install transformers==4.48.0 jupyterlab \
     pip install uv && \
     uv pip install opencv-python-headless && \
     uv pip install -e ."
