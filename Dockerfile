@@ -69,7 +69,7 @@ RUN bash -c "source /opt/conda/etc/profile.d/conda.sh && \
 # jupyter lab
 RUN bash -c "source /opt/conda/etc/profile.d/conda.sh && \
     conda activate mlzero && \
-    pip install transformers==4.48.0  jupyterlab"
+    pip install transformers==4.48.0  jupyterlab temporalio"
     
 # Set working directory for users
 WORKDIR /workspace
