@@ -33,10 +33,10 @@ enable_meta_prompting: False
 llm: &default_llm
   # Note: bedrock is only supported in limited AWS regions
   #       and requires AWS credentials
-  provider: bedrock
-  model: "us.anthropic.claude-sonnet-4-5-20250929-v1:0"
+  provider: openai
+  model: "kimi-k2.5"
   max_tokens: 65535
-  proxy_url: null
+  proxy_url: http://litellm.feg.cn/v1
   temperature: 0.1
   top_p: 0.9
   verbose: True
