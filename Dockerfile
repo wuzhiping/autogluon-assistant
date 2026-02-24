@@ -54,7 +54,6 @@ RUN git clone --branch ${BRANCH} https://github.com/wuzhiping/autogluon-assistan
 RUN bash -c "source /opt/conda/etc/profile.d/conda.sh && \
     conda activate mlzero && \
     cd /opt/autogluon-assistant && \
-    pip install transformers==4.48.0 jupyterlab \
     pip install uv && \
     uv pip install opencv-python-headless && \
     uv pip install -e ."
@@ -67,6 +66,11 @@ RUN bash -c "source /opt/conda/etc/profile.d/conda.sh && \
     uv pip install opencv-python-headless && \
     uv pip install -r requirements.txt"
 
+# jupyter lab
+RUN bash -c "source /opt/conda/etc/profile.d/conda.sh && \
+    conda activate mlzero && \
+    pip install transformers==4.48.0  jupyterlab"
+    
 # Set working directory for users
 WORKDIR /workspace
 
