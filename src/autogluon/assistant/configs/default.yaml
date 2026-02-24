@@ -37,7 +37,7 @@ llm: &default_llm
   model: "kimi-k2.5"
   max_tokens: 65535
   proxy_url: http://litellm.feg.cn/v1
-  temperature: 0.1
+  temperature: 1
   top_p: 0.9
   verbose: True
   multi_turn: False
