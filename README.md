@@ -53,7 +53,7 @@ Linux-only support at present.
 For the latest features, install from source:
 
 ```bash
-pip install uv && uv pip install git+https://github.com/autogluon/autogluon-assistant.git
+pip install uv && uv pip install git+https://github.com/shawoo/autogluon-assistant.git
 ```
 
 ---
@@ -63,9 +63,7 @@ pip install uv && uv pip install git+https://github.com/autogluon/autogluon-assi
 MLZero supports multiple LLM providers with AWS Bedrock as the default:
 
 ```bash
-export AWS_DEFAULT_REGION="<your-region>"
-export AWS_ACCESS_KEY_ID="<your-access-key>"
-export AWS_SECRET_ACCESS_KEY="<your-secret-key>"
+export OPENAI_API_KEY="<your-secret-key>"
 ```
 
 To run MLZero in CLI:
