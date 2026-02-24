@@ -81,7 +81,7 @@ mlzero -i <input_data_folder>
 Build the Docker image from the **project root**.
 
 ```bash
-docker build --no-cache -t mlzero:latest .
+docker build --no-cache -t shawoo/mlzero:latest .
 ```
 
 The image contains two conda environments: `mlzero` for running MLZero, and `maab` for MAAB benchmarking.
@@ -96,7 +96,7 @@ The image contains two conda environments: `mlzero` for running MLZero, and `maa
 Run the container:
 
 ```bash
-docker run -it --gpus all --shm-size=32g mlzero:latest
+docker run -it --gpus all --shm-size=32g shawoo/mlzero:latest
 # test MLZero in the docker
 mlzero -i /opt/autogluon-assistant/maab/example_dataset/abalone/training
 ```
