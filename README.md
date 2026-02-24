@@ -53,7 +53,7 @@ Linux-only support at present.
 For the latest features, install from source:
 
 ```bash
-pip install uv && uv pip install git+https://github.com/shawoo/autogluon-assistant.git
+pip install uv && uv pip install git+https://github.com/wuzhiping/autogluon-assistant.git
 ```
 
 ---
