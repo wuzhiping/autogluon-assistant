@@ -99,7 +99,7 @@ Run the container:
 ```bash
 docker run -it --gpus all --shm-size=32g shawoo/mlzero:latest
 # test MLZero in the docker
-mlzero -i /opt/autogluon-assistant/maab/example_dataset/abalone/training
+mlzero -i /opt/autogluon-assistant/maab/example_dataset/abalone/training -v 4
 ```
 
 ---
