@@ -70,5 +70,7 @@ RUN bash -c "source /opt/conda/etc/profile.d/conda.sh && \
 # Set working directory for users
 WORKDIR /workspace
 
+ENV OPENAI_BASE_URL='http://litellm.feg.cn/v1'
+
 # Start bash shell by default
 CMD ["/bin/bash"]
